@@ -1,0 +1,87 @@
+.side-nav {
+    width: 8%;
+    border: #000000;
+    height: 25%;
+    border-radius: 5px;
+    border: #ffffff solid;
+    border-color: #c6c3c3;
+    border-width: 1px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    margin: 20px;
+    color: #000;
+}
+
+.view {
+    width: 100%;
+    border: #c6c3c3 solid;
+    border-color: #c6c3c3;
+    margin-bottom: 5px;
+    border-width: 0.5px;
+}
+
+.side-margin p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.side-nav .side-margin {
+    margin-bottom: 0px;
+}
+
+.side-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.side-container .icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    accent-color: #000;
+    transition: 'filter 0.3s ease-in-out',
+}
+
+@media (max-width: 600px) {
+
+    /* Styles specific to screens with a maximum width of 600px (common for mobile devices) */
+    /* You can add styles to adjust margins, font sizes, or any other properties here */
+    .side-nav {
+        width: 70%;
+        border: #ffffff solid;
+        border-color: #c6c3c3;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+    .view {
+        width: 0.5px;
+        height: 50px;
+        flex-direction: column;
+        display: flex;
+        margin-right: 20px;
+        margin-left: 10px;
+        border-width: 0.5px;
+    }
+    
+    .side-container {
+        flex-direction: row;
+        /* Horizontal arrangement */
+        height: 8vh;
+        align-items: flex-start;
+        /* Align items to the start of the flex container */
+    }
+
+    .side-container .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+   
+    p {
+        margin-bottom: 0;
+        /* Remove bottom margin for text */
+    }
+}
